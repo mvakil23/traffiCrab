@@ -76,7 +76,7 @@ while t<=50:
     servo6.move(sin(2 * t) * 84 + 96)
     time.sleep(0.05)
     t += 0.1
-
+#add check on motor angle
 try:
     print("I went through the motions, but it's time to rest!")
     time.sleep(2)
