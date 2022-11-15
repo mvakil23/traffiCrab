@@ -63,13 +63,13 @@ while t<=50:
     servo1.move(sin(2 * t) * 15.5 + 15.5)
     servo2.move(cos(2 * t) * 71 + 71)
 
-    servo7.move(sin(2 * t) * 35.5 + 204)
+    servo7.move(sin(2 * t) * 33 + 204)
     #servo7.move(sin(3 * t) * 25 + 0)
     servo8.move(cos(2 * t) * 82.5 + 82.5)
 
     servo3.move(cos(2*t) * 22 + 22)
     #servo3.move(cos(3*t) * 25 + 0)
-    servo4.move(cos(2*t) * 86 + 136) #this may need to be sin
+    servo4.move(sin(2*t) * 86 + 136) #this may need to be sin
 
     servo5.move(cos(2 * t) * 34.5 + 205)
     #servo5.move(cos(3 * t) * .5 + 0)
