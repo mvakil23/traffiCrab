@@ -11,14 +11,14 @@ try:
     print("Started Boot")
     servo1 = LX16A(1)
     servo2 = LX16A(2)
-    servo1.set_angle_limits(0, 170)
+    servo1.set_angle_limits(0, 32)
     servo1.set_angle_offset(-21)
     servo2.set_angle_limits(0, 142)
     servo2.set_angle_offset(0)
 
     servo3 = LX16A(3)
     servo4 = LX16A(4)
-    servo3.set_angle_limits(0, 170)
+    servo3.set_angle_limits(0, 45)
     servo3.set_angle_offset(0)
     servo4.set_angle_limits(50, 222)
     servo4.set_angle_offset(0)
@@ -60,7 +60,8 @@ except ServoTimeoutError as e:
 t = 0
 #set limit to loop
 while t<=50:
-    servo1.move(sin(2 * t) * 31 + 31) #sin(2 * t) * 15.5 + 15.5
+    #servo1.move(sin(2 * t) * 31 + 31) #sin(2 * t) * 15.5 + 15.5
+    servo1.move(sin(2 * t) * 15.5 + 15.5)
     servo2.move(cos(2 * t) * 71 + 71)
 
     servo7.move(sin(2 * t) * 35.5 + 204)
@@ -68,6 +69,7 @@ while t<=50:
     servo8.move(cos(2 * t) * 82.5 + 82.5)
 
     servo3.move(cos(2 * t) * 36 + 36) #cos(2*t) * 22 + 22
+    servo3.move(cos(2*t) * 22 + 22) #cos(2*t) * 22 + 22
     #servo3.move(cos(3*t) * 25 + 0)
     servo4.move(sin(2*t) * 86 + 136) #this was originally cos
 
