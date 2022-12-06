@@ -1,5 +1,5 @@
 #Adapted from @ethanlipson on github
-#Modified by Manav V,
+#Modified by Manav V.
 #4 leg motion
 #Access via ssh
 
