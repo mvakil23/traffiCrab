@@ -1,7 +1,8 @@
 #Adapted from @ethanlipson on github
+#Modified by Manav V,
 #4 leg motion
 #Access via ssh
-#Modified by Manav V
+
 
 from math import sin, cos
 from lx16a import *
@@ -62,7 +63,7 @@ except ServoTimeoutError as e:
 t = 0
 #set limit to loop
 while t<=50:
-    speed = 2.0
+    speed = 2.5
     #servo1.move(sin(2 * t) * 31 + 31) #sin(2 * t) * 15.5 + 15.5
     servo1.move(sin(speed * t) * 15.5 + 15.5)
     servo2.move(cos(speed * t) * 71 + 71)
