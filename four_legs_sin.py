@@ -77,7 +77,7 @@ while t<=50:
 
     servo5.move(cos(speed * t) * 34.5 + 205)
     #servo5.move(cos(3 * t) * .5 + 0)
-    servo6.move(sin(speed * t) * 84 + 130)
+    servo6.move(sin(speed * t) * 84 + 100)
     time.sleep(0.05)
     t += 0.1
 #add check on motor angle
