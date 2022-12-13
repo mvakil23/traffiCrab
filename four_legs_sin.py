@@ -62,21 +62,20 @@ t = 0
 #set limit to loop
 while t<=50:
     speed = 2
-    #
     #servo1.move(sin(2 * t) * 31 + 31) #sin(2 * t) * 15.5 + 15.5
-    servo1.move(sin(speed * t) * 12.5 + 35.5)
+    servo1.move(sin(speed * t) * 15.5 + 35.5)
     servo2.move(cos(speed * t) * 71 + 71)
 
-    servo7.move(sin(speed * t) * 30 + 180)
+    servo7.move(sin(speed * t) * 35.5 + 184)
     #servo7.move(sin(3 * t) * 25 + 0)
     servo8.move(cos(speed * t) * 82.5 + 82.5)
 
     #servo3.move(cos(2 * t) * 36 + 36) #cos(2*t) * 22 + 22
-    servo3.move(cos(speed*t) * 15 + 45) #cos(2*t) * 22 + 22
+    servo3.move(cos(speed*t) * 22 + 43) #cos(2*t) * 22 + 22
     #servo3.move(cos(3*t) * 25 + 0)
     servo4.move(sin(speed*t) * 86 + 136) #this was originally cos
 
-    servo5.move(cos(speed * t) * 30 + 180)
+    servo5.move(cos(speed * t) * 34.5 + 185)
     #servo5.move(cos(3 * t) * .5 + 0)
     servo6.move(sin(speed * t) * 84 + 96)
     time.sleep(0.05)
